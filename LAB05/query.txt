@@ -1,0 +1,28 @@
+1.
+$ curl -i -v -XPUT http://localhost:8098/types/default/buckets/s24632/props -H'content-type:application/json' -d'{"props":{}}'
+$ curl -i -XPUT -d '{"pierwsza": "first", "druga": 2, "trzecia": true, "czwarta":{"Imie":"Paulina", "Znak zodiaku": "Panna"}}' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1a?returnbody=true
+$ curl -i -XPUT -d '{"tablica": [11,22,33], "string": "tablica trzech wartosci", "dlugosc tablicy": 3, "czy ładna": true}' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1b?returnbody=true
+$ curl -i -XPUT -d '{"Imie": "Kinga", "Nazwisko": "tablica trzech wartosci", "wzrost": 174, "Czy studentka": false}' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1c?returnbody=true
+$ curl -i -XPUT -d '{"imiona dzieci": ["Ania","Filip","Karolina"], "Wiek dzieci": [6,1,5], "nazwisko matki": "Kowalska", "Niebieska karta": false }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1d?returnbody=true
+$ curl -i -XPUT -d '{"nazwa":"ostatnia", "value1": 1548, "value2": [16,11,15], "value3": false }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1e              
+2.
+$ curl -i  http://localhost:8098/types/default/buckets/s24632/keys/zad1c
+3.
+$ curl -i -XPUT -d '{"imiona rodzicow":["Dorota","Andrzej"], "imiona dzieci": ["Ania","Filip","Karolina"], "Wiek dzieci": [6,1,5], "nazwisko matki": "Kowalska", "Niebieska karta": false }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1d?returnbody=true
+4.
+$ curl -i -XPUT -d '{"imiona rodzicow":["Dorota","Andrzej"], "imiona dzieci": ["Ania","Filip","Karolina"], "Wiek dzieci": [6,1,5], "nazwisko matki": "Kowalska" }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1d?returnbody=true
+5.
+$ curl -i -XPUT -d '{"imiona rodzicow":["Dorota","Andrzej"], "imiona dzieci": ["Ania","Filip","Karolina"], "Wiek dzieci": [6,1,5], "nazwisko matki": "NN" }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1d?returnbody=true
+6.
+$ curl -i -XDELETE http://localhost:8098/types/default/buckets/s24632/keys/zad1a
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys?keys=true
+7.
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys/notexists
+8.
+$ curl -i -XPOST -d '{"imiona rodzicow":["Dominika","Maciej"], "imiona dzieci": ["Adam","Filipa","Karol"], "Wiek dzieci": [16,11,15], "nazwisko matki": "Nowak" }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/?returnbody=true
+9.
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys?keys=true
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys/Yg9vP9bCPXskIsSgEbg7LL5TnzW
+10.
+$ curl -i -XDELETE http://localhost:8098/types/default/buckets/s24632/keys/Yg9vP9bCPXskIsSgEbg7LL5TnzW
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys?keys=true   
