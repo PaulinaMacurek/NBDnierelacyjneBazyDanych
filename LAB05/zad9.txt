@@ -1,0 +1,16 @@
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys?keys=true
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys/Yg9vP9bCPXskIsSgEbg7LL5TnzW
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   140  100   140    0     0  11008      0 --:--:-- --:--:-- --:--:-- 12727HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvt/pwnGWgeFVYgZTImMeK8OemOe3+bIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s24632>; rel="up"
+Last-Modified: Wed, 04 May 2022 20:23:24 GMT
+ETag: "4vXq3ZfKYsDB6vB1MtnbON"
+Date: Wed, 04 May 2022 20:29:57 GMT
+Content-Type: application/json
+Content-Length: 140
+
+{"imiona rodzicow":["Dominika","Maciej"], "imiona dzieci": ["Adam","Filipa","Karol"], "Wiek dzieci": [16,11,15], "nazwisko matki": "Nowak" }

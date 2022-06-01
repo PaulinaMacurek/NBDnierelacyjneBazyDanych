@@ -1,0 +1,16 @@
+$ curl -i -XPUT -d '{"tablica": [11,22,33], "string": "tablica trzech wartosci", "dlugosc tablicy": 3, "czy ładna": true}' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1b?returnbody=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   202  100   101  100   101  11899  11899 --:--:-- --:--:-- --:--:-- 28857HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvt/pqWTNwHA4OIMpkTGPlaH3/bPbfFkA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s24632>; rel="up"
+Last-Modified: Wed, 04 May 2022 12:37:33 GMT
+ETag: "43ppn9VRqucLEn51xRUgJH"
+Date: Wed, 04 May 2022 12:37:33 GMT
+Content-Type: application/json
+Content-Length: 101
+
+{"tablica": [11,22,33], "string": "tablica trzech wartosci", "dlugosc tablicy": 3, "czy ▒adna": true}
+

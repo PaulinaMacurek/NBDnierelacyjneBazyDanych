@@ -1,0 +1,24 @@
+$ curl -i -XDELETE http://localhost:8098/types/default/buckets/s24632/keys/Yg9vP9bCPXskIsSgEbg7LL5TnzW
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 04 May 2022 20:30:50 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+
+Lenovo@DESKTOP-0SE7JU4 MINGW64 ~ (master)
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys?keys=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    34  100    34    0     0   3427      0 --:--:-- --:--:-- --:--:--  3777HTTP/1.1 200 OK
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 04 May 2022 20:30:54 GMT
+Content-Type: application/json
+Content-Length: 34
+
+{"keys":["zad1d","zad1c","zad1b"]}

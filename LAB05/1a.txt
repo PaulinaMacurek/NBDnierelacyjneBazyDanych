@@ -1,0 +1,15 @@
+$ curl -i -XPUT -d '{"pierwsza": "first", "druga": 2, "trzecia": true, "czwarta":{"Imie":"Paulina", "Znak zodiaku": "Panna"}}' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1a?returnbody=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   210  100   105  100   105     42     42  0:00:02  0:00:02 --:--:--    85HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvt/pcXU5A8PhwAymRMY8VoZf757d5ssCAA==
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s24632>; rel="up"
+Last-Modified: Wed, 04 May 2022 12:35:06 GMT
+ETag: "3KTN2gXAnysE8h7xjPQfXo"
+Date: Wed, 04 May 2022 12:35:09 GMT
+Content-Type: application/json
+Content-Length: 105
+
+{"pierwsza": "first", "druga": 2, "trzecia": true, "czwarta":{"Imie":"Paulina", "Znak zodiaku": "Panna"}}

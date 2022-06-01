@@ -1,0 +1,11 @@
+$ curl -i http://localhost:8098/types/default/buckets/s24632/keys/notexists
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    10  100    10    0     0    501      0 --:--:-- --:--:-- --:--:--   526HTTP/1.1 404 Object Not Found
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 04 May 2022 20:19:09 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found
+

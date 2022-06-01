@@ -1,0 +1,16 @@
+$ curl -i -XPUT -d '{"imiona dzieci": ["Ania","Filip","Karolina"], "Wiek dzieci": [6,1,5], "nazwisko matki": "Kowalska", "Niebieska karta": false }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1d?returnbody=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   254  100   127  100   127   9299   9299 --:--:-- --:--:-- --:--:-- 21166HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvt/pwr2OgeFwUAZTIlMeK0PXx2e3+bIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s24632>; rel="up"
+Last-Modified: Wed, 04 May 2022 12:46:02 GMT
+ETag: "5JMDnPxbiBlWfxe99gdcrp"
+Date: Wed, 04 May 2022 12:46:02 GMT
+Content-Type: application/json
+Content-Length: 127
+
+{"imiona dzieci": ["Ania","Filip","Karolina"], "Wiek dzieci": [6,1,5], "nazwisko matki": "Kowalska", "Niebieska karta": false }
+

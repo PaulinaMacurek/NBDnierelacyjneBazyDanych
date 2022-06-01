@@ -1,0 +1,15 @@
+$ curl -i -XPUT -d '{"Imie": "Kinga", "Nazwisko": "tablica trzech wartosci", "wzrost": 174, "Czy studentka": false}' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/zad1c?returnbody=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   190  100    95  100    95  10293  10293 --:--:-- --:--:-- --:--:-- 23750HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvt/p56vAwHA4MIMpkSmPleH5h2e3+bIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s24632>; rel="up"
+Last-Modified: Wed, 04 May 2022 12:43:19 GMT
+ETag: "2UQW32mSRy0WXwj36aA3g0"
+Date: Wed, 04 May 2022 12:43:19 GMT
+Content-Type: application/json
+Content-Length: 95
+
+{"Imie": "Kinga", "Nazwisko": "tablica trzech wartosci", "wzrost": 174, "Czy studentka": false}

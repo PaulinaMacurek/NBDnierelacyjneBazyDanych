@@ -1,0 +1,30 @@
+$ curl -i -v -XPUT http://localhost:8098/types/default/buckets/s24632/props -H'content-type:application/json' -d'{"props":{}}'
+*   Trying 127.0.0.1:8098...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0* Connected to localhost (127.0.0.1) port 8098 (#0)
+> PUT /types/default/buckets/s24632/props HTTP/1.1
+> Host: localhost:8098
+> User-Agent: curl/7.80.0
+> Accept: */*
+> content-type:application/json
+> Content-Length: 12
+>
+} [12 bytes data]
+100    12    0     0  100    12      0      5  0:00:02  0:00:02 --:--:--     5* Mark bundle as not supporting multiuse
+< HTTP/1.1 204 No Content
+< Vary: Accept-Encoding
+< Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+< Date: Wed, 04 May 2022 12:31:22 GMT
+< Content-Type: application/json
+< Content-Length: 0
+<
+100    12    0     0  100    12      0      5  0:00:02  0:00:02 --:--:--     5HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Wed, 04 May 2022 12:31:22 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+* Connection #0 to host localhost left intact

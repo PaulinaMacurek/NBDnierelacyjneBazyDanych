@@ -1,0 +1,18 @@
+
+$ curl -i -XPOST -d '{"imiona rodzicow":["Dominika","Maciej"], "imiona dzieci": ["Adam","Filipa","Karol"], "Wiek dzieci": [16,11,15], "nazwisko matki": "Nowak" }' -H "Content-Type: application/json"  http://localhost:8098/types/default/buckets/s24632/keys/?returnbody=true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   280  100   140  100   140   2217   2217 --:--:-- --:--:-- --:--:--  4516HTTP/1.1 201 Created
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvt/pwnGWgeFVYgZTImMeK8OemOe3+bIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /types/default/buckets/s24632/keys/Yg9vP9bCPXskIsSgEbg7LL5TnzW
+Link: </buckets/s24632>; rel="up"
+Last-Modified: Wed, 04 May 2022 20:23:24 GMT
+ETag: "4vXq3ZfKYsDB6vB1MtnbON"
+Date: Wed, 04 May 2022 20:23:24 GMT
+Content-Type: application/json
+Content-Length: 140
+
+{"imiona rodzicow":["Dominika","Maciej"], "imiona dzieci": ["Adam","Filipa","Karol"], "Wiek dzieci": [16,11,15], "nazwisko matki": "Nowak" }
+
