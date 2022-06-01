@@ -1,0 +1,3 @@
+Dokument w bazie przed edycją:   {'wiek': 98, 'merried': True, 'last_name': 'Kowalski'}
+Dokument w bazie po edycji:   {'wiek': 99, 'merried': True, 'last_name': 'Kowalski'}
+Pobranie po usunięciu dokumentu: None
