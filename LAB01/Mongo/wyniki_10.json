@@ -1,0 +1,8 @@
+MongoDB shell version v3.6.8
+connecting to: mongodb://127.0.0.1:27017/ndb
+Implicit session: session { "id" : UUID("7379af85-0860-40ee-bae8-dc18ba4a9db5") }
+MongoDB server version: 3.6.8
+connecting to: mongodb://localhost:27017/nbd
+Implicit session: session { "id" : UUID("4e21f656-137c-4461-a817-c8a81207dc13") }
+MongoDB server version: 3.6.8
+{ "nMatched" : 86, "nUpserted" : 0, "nModified" : 86 }
